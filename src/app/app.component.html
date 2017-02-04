@@ -1,3 +1,12 @@
-<h1>
-  {{title}}
-</h1>
+<div id="container">
+  <div *ngIf="show" id="menu">
+    <h2>Setting Parameters</h2>
+  </div>
+  <div id="map">
+    <button (click)="mostrarMenu()">Menu avanzado</button>
+    <ng2-map center="19.2964413,-99.1603331">
+      <polygon *ngFor="let p of points" [paths]="p.path" 
+      [strokeWeight]="0" [fillColor]="p.color" [fillOpacity]="0.6"></polygon>
+    </ng2-map>
+  </div>
+</div>

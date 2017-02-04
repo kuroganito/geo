@@ -1,0 +1,24 @@
+#container{
+    display: flex;
+}
+
+#menu {
+ flex: 1;
+}
+
+#menu > h2 {
+    text-align: center;
+}
+#map {
+ flex: 2;
+}
+
+#map > button {
+    position: absolute;
+    z-index: 1000;
+    right: 0;
+}
+
+ng2-map{
+    height: 98vh;
+}
